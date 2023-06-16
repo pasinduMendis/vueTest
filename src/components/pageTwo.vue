@@ -4,8 +4,8 @@
   <template>
   <div id="index">
     <h1>MY PAGE Two</h1>
-    <button ><router-link to="/">Index</router-link></button>
-    <button ><router-link to="/pageOne">pageOne</router-link></button>
+    <router-link to="/"><button >index</button></router-link>
+    <router-link to="/pageOne"><button >pageOne</button></router-link>
     </div>
 </template>
 

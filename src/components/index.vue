@@ -4,8 +4,8 @@
   <template>
   <div id="index">
     <h1>MY Inedex PAGE</h1>
-    <button ><router-link to="/pageOne">pageOne</router-link></button>
-    <button ><router-link to="/pageTwo">pageTwo</router-link></button>
+    <router-link to="/pageOne"><button >pageOne</button></router-link>
+    <router-link to="/pageTwo"><button >pageTwo</button></router-link>
     </div>
 </template>
 
