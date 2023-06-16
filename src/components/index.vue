@@ -1,14 +1,25 @@
-<script setup>
-</script>
 
   <template>
   <div id="index">
     <h1>MY Inedex PAGE</h1>
-    <router-link to="/pageOne"><button >pageOne</button></router-link>
-    <router-link to="/pageTwo"><button >pageTwo</button></router-link>
+    <button @click="goToPageOne">pageOne</button>
+    <button @click="goToPageTwo">pageTwo</button>
     </div>
 </template>
 
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToPageOne = () => {
+  router.push('/pageOne');
+};
+
+const goToPageTwo = () => {
+  router.push('/pageTwo');
+};
+</script>
 
 <style scoped>
 #index{

@@ -1,13 +1,25 @@
-<script setup>
-</script>
 
   <template>
   <div id="index">
     <h1>MY PAGE One</h1>
-    <router-link to="/"><button >index</button></router-link>
-    <router-link to="/pageTwo"><button >pageTwo</button></router-link>
+    <button @click="goToPageIndex">Index</button>
+    <button @click="goToPageTwo">pageTwo</button>
     </div>
 </template>
+
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToPageTwo = () => {
+  router.push('/pageOne');
+};
+
+const goToPageIndex = () => {
+  router.push('/');
+};
+</script>
 
 
 <style scoped>
