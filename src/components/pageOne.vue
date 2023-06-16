@@ -13,7 +13,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const goToPageTwo = () => {
-  router.push('/pageOne');
+  router.push('/pageTwo');
 };
 
 const goToPageIndex = () => {

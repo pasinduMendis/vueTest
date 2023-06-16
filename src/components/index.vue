@@ -12,12 +12,17 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToPageOne = () => {
+const goToPageOne = async () => {
+await setTimeout(() => {
   router.push('/pageOne');
+  },1500)
 };
 
-const goToPageTwo = () => {
+const goToPageTwo = async() => {
+await setTimeout(() => {
   router.push('/pageTwo');
+  },1500)
+  
 };
 </script>
 
